@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/delete"
+        app:showAsAction="never"
+        android:title="Eliminar"/>
+    <item
+        android:id="@+id/send_pdf"
+        app:showAsAction="never"
+        android:title="Compartir"/>
+    <item
+        android:id="@+id/delete_order"
+        app:showAsAction="ifRoom"
+        android:title="Eliminar"
+        android:visible="false"/>
+    <item
+        android:id="@+id/send"
+        app:showAsAction="ifRoom"
+        android:title="Enviar"
+        android:visible="false"/>
+</menu>

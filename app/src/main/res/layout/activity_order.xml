@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Activities.OrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextOrder"
+                android:layout_width="339dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/textViewOrderC"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="46dp"
+                android:ems="10"
+                android:hint="Ingresar cliente"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="47dp" />
+
+            <TextView
+                android:id="@+id/textViewOrderC"
+                android:layout_width="171dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:text="Nombre del cliente"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="47dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="170dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="95dp"
+                android:text="Dirección del cliente"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.095"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <EditText
+                android:id="@+id/editTextDirection"
+                android:layout_width="339dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="124dp"
+                android:ems="10"
+                android:hint="Dirección"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="129dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="175dp"
+                android:text="Veladoras"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="181dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCandlesTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="205dp" />
+
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_marginRight="60dp"
+                android:text="Cantidad"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewQuantity"
+                android:layout_alignTop="@+id/spinnerCandlesTypes"
+                android:ems="10"
+                android:hint="0"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewEsoterica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerCandlesTypes"
+                android:text="Detalles"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editTextEsoterica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEsoterica"
+                android:layout_marginLeft="20dp"
+                android:hint="Detalles veladora"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/textViewEssence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerCandlesTypes"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Escencia"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinnerEssence"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEssence"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerEssence"
+                android:layout_marginLeft="20dp"
+                android:text="Tipo"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinnerTypes"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewType"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:id="@+id/buttonMakeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Crear pedido" />
+    </RelativeLayout>
+</ScrollView>

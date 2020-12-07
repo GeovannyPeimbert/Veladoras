@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="optionscandles">
+        <item>Seleccione</item>
+        <item>Repuesto cono no. 5</item>
+        <item>Repuesto cono no. 4</item>
+        <item>Semanal ecológica</item>
+        <item>Semanal ecológica 1/2</item>
+        <item>Vaso limonero</item>
+        <item>Vaso 100</item>
+        <item>Esotérica</item>
+    </string-array>
+    <string-array name="optionsEssence">
+        <item>Seleccione</item>
+        <item>C/Aroma</item>
+        <item>S/Aroma</item>
+    </string-array>
+    <string-array name="candleTypes">
+        <item>Seleccione</item>
+        <item>Sr. Misericordia  </item>
+        <item>San Judas</item>
+        <item>Divina Providencia</item>
+        <item>Virgen blanca     </item>
+        <item>Virgen rosa       </item>
+        <item>Virgen mexicana   </item>
+    </string-array>
+</resources>
